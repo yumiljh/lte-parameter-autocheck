@@ -8,12 +8,12 @@ reload(sys)
 sys.setdefaultencoding("gbk")
 
 
-writeBook=open("LTE²ÎÊý¼ì²é½á¹û.csv","w")
-content='"²ÎÊýÓ¢ÎÄÃû","²ÎÊýÖÐÎÄÃû","MOI","SubNetwork","ENBID","ÍøÔªÃû³Æ","ÏÖÍøÉèÖÃÖµ","ºÏÀíÉèÖÃÖµ","ÖØÒªÐÔ"\n'
+writeBook=open("LTEå‚æ•°æ£€æŸ¥ç»“æžœ.csv","w")
+content='"å‚æ•°è‹±æ–‡å","å‚æ•°ä¸­æ–‡å","MOI","SubNetwork","ENBID","ç½‘å…ƒåç§°","çŽ°ç½‘è®¾ç½®å€¼","åˆç†è®¾ç½®å€¼","é‡è¦æ€§"\n'
 writeBook.write(content)
 
-rulename=os.getcwd()+"\\"+"¼ì²é¹æ·¶.xls"
-cwd=os.getcwd()+"\\Ñ¹ËõÎÄ¼þ"
+rulename=os.getcwd()+"\\"+"æ£€æŸ¥è§„èŒƒ.xls"
+cwd=os.getcwd()+"\\åŽ‹ç¼©æ–‡ä»¶"
 cwdfilelist=os.listdir(cwd)
 
 for x in cwdfilelist:
@@ -27,4 +27,4 @@ for x in cwdfilelist:
         e.run()
 
 writeBook.close()
-raw_input(">> ²ÎÊý¼ì²éÍê±Ï£¬Çë°´ÈÎÒâ¼ü½áÊø£¬»¶Ó­Ê¹ÓÃ£¡")
+raw_input(">> å‚æ•°æ£€æŸ¥å®Œæ¯•ï¼Œè¯·æŒ‰ä»»æ„é”®ç»“æŸï¼Œæ¬¢è¿Žä½¿ç”¨ï¼")
